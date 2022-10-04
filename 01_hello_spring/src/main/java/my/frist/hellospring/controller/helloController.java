@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-public class helloController {
+public class HelloController {
 
     // GetMapping()으로 괄호 안의 문자열을 주소와 맵핑해줍니다.(예: localhost:500/hello)
     @GetMapping("hello")

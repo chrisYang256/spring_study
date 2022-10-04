@@ -3,10 +3,13 @@ package my.frist.hellospring.service;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import my.frist.hellospring.domain.Member;
 import my.frist.hellospring.repository.MemberRepository;
-import my.frist.hellospring.repository.MemoryMemberRepository;
 
+@Service
 public class MemberService {
     
     // private final MemberRepository memberRepository = new MemoryMemberRepository();
@@ -14,6 +17,7 @@ public class MemberService {
     private final MemberRepository memberRepository;
     
     // 이처럼 memberRepository를 외부(현재 MemberServiceTest)에서 넣어 주는 방식을 DI(Defendency Injection)이라고 함.
+    @Autowired
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
