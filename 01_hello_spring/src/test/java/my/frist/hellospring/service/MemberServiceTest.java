@@ -10,6 +10,8 @@ import org.junit.jupiter.api.Test;
 import my.frist.hellospring.domain.Member;
 import my.frist.hellospring.repository.MemoryMemberRepository;
 
+
+// 자바 코드만 테스트 하는 것을 단위 테스트라고 함(통합 테스트보다 상대적으로 중요 )
 public class MemberServiceTest {
     
     // MemberService memberService = new MemberService();

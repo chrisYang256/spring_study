@@ -1,8 +1,14 @@
 package my.frist.hellospring.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 
+import my.frist.hellospring.domain.Member;
 import my.frist.hellospring.service.MemberService;
 
 // Controller annotation이 있으면 스프링이 실행 시 스프링 컨테이너에서 관리함
@@ -24,6 +30,27 @@ public class MemberController {
     // 생성자 주입 방식은 스프링 컨테이너가 올라가며 세팅되는 시점에 들어가고 끝나기 때문에 의존관계가 실행 중 동적으로 변하는 경우가 없어 권장
     @Autowired
     public MemberController(MemberService memberService) {
-        this.memberService = memberService; 
+        this.memberService = memberService;
     }
+    
+    @GetMapping(value = "/members/new")
+    public String createForm() {
+        return "members/createMemberForm";
+    }
+
+    @PostMapping(value = "/members/new")
+    public String create(MemberForm form) {
+        Member member = new Member();
+        member.setName(form.getName());
+        memberService.join(member);
+
+        return "redirect:/";
+    }
+
+    @GetMapping(value = "/members")
+    public String list(Model model) {
+        List<Member> members = memberService.getAllMember();
+        model.addAttribute("members", members);
+        return "members/memberList";
+    }  
 }
