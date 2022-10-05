@@ -6,6 +6,7 @@ import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.annotation.Commit;
 import org.springframework.transaction.annotation.Transactional;
 
 import my.frist.hellospring.domain.Member;
@@ -20,6 +21,7 @@ public class MemberServiceIntergratedTest {
     @Autowired MemberRepository memberRepository;
 
     @Test
+    // @Commit // 활성화 시 실제로 db에 data를 저장시킴
     void testJoin() {
         // given
         Member member = new Member();
