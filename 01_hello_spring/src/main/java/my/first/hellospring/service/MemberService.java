@@ -1,4 +1,4 @@
-package my.frist.hellospring.service;
+package my.first.hellospring.service;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,8 +6,8 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import my.frist.hellospring.domain.Member;
-import my.frist.hellospring.repository.MemberRepository;
+import my.first.hellospring.domain.Member;
+import my.first.hellospring.repository.MemberRepository;
 
 @Service
 public class MemberService {

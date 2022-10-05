@@ -1,4 +1,4 @@
-package my.frist.hellospring.controller;
+package my.first.hellospring.controller;
 
 public class MemberForm {
     private String name;

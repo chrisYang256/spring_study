@@ -1,4 +1,4 @@
-package my.frist.hellospring.repository;
+package my.first.hellospring.repository;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -8,7 +8,7 @@ import java.util.Optional;
 
 import org.springframework.stereotype.Repository;
 
-import my.frist.hellospring.domain.Member;
+import my.first.hellospring.domain.Member;
 
 @Repository
 public class MemoryMemberRepository implements MemberRepository {

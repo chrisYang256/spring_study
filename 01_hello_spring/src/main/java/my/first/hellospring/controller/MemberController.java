@@ -1,4 +1,4 @@
-package my.frist.hellospring.controller;
+package my.first.hellospring.controller;
 
 import java.util.List;
 
@@ -8,8 +8,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import my.frist.hellospring.domain.Member;
-import my.frist.hellospring.service.MemberService;
+import my.first.hellospring.domain.Member;
+import my.first.hellospring.service.MemberService;
 
 // Controller annotation이 있으면 스프링이 실행 시 스프링 컨테이너에서 관리함
 @Controller

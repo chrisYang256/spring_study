@@ -1,4 +1,4 @@
-package my.frist.hellospring.repository;
+package my.first.hellospring.repository;
 
 import java.util.HashMap;
 import java.util.List;
@@ -13,7 +13,7 @@ import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.simple.SimpleJdbcInsert;
 
-import my.frist.hellospring.domain.Member;
+import my.first.hellospring.domain.Member;
 
 public class JdbcTemplateMemberRepository implements MemberRepository {
 
