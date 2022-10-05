@@ -15,12 +15,12 @@ import org.springframework.jdbc.core.simple.SimpleJdbcInsert;
 
 import my.frist.hellospring.domain.Member;
 
-public class JdbcTemplateMEmberRepository implements MemberRepository {
+public class JdbcTemplateMemberRepository implements MemberRepository {
 
     private final JdbcTemplate jdbcTemplate;
 
     @Autowired // 생성자가 1개인 경우 Autowired 생략 가능
-    public JdbcTemplateMEmberRepository(DataSource dataSource) { // DI from SpringConfig.java
+    public JdbcTemplateMemberRepository(DataSource dataSource) { // DI from SpringConfig.java
         jdbcTemplate = new JdbcTemplate(dataSource);
     }
 
