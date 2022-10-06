@@ -7,8 +7,9 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import my.frist.hellospring.domain.Member;
-import my.frist.hellospring.repository.MemoryMemberRepository;
+import my.first.hellospring.domain.Member;
+import my.first.hellospring.repository.MemoryMemberRepository;
+import my.first.hellospring.service.MemberService;
 
 
 // 자바 코드만 테스트 하는 것을 단위 테스트라고 함(통합 테스트보다 상대적으로 중요 )

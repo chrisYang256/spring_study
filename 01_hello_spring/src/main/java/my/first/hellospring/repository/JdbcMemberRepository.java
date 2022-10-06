@@ -1,4 +1,4 @@
-package my.frist.hellospring.repository;
+package my.first.hellospring.repository;
 
 import javax.sql.DataSource;
 import java.sql.*;
@@ -6,8 +6,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-import my.frist.hellospring.domain.Member;
 import org.springframework.jdbc.datasource.DataSourceUtils;
+
+import my.first.hellospring.domain.Member;
 
 
 public class JdbcMemberRepository implements MemberRepository {

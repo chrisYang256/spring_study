@@ -9,8 +9,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.annotation.Commit;
 import org.springframework.transaction.annotation.Transactional;
 
-import my.frist.hellospring.domain.Member;
-import my.frist.hellospring.repository.MemberRepository;
+import my.first.hellospring.domain.Member;
+import my.first.hellospring.repository.MemberRepository;
+import my.first.hellospring.service.MemberService;
 
 
 @SpringBootTest // 스프링 컨테이너와 테스트를 함께 실행하는 것을 통합 테스트라고 함

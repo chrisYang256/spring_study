@@ -1,11 +1,11 @@
-package my.frist.hellospring.repository;
+package my.first.hellospring.repository;
 
 import java.util.Optional;
 
 import org.springframework.context.annotation.Primary;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import my.frist.hellospring.domain.Member;
+import my.first.hellospring.domain.Member;
 
 // interface가 interface를 받을 때는 extends, interface는 다중 상속 가능
 // interface SpringDataJpaMemberRepository extends JpaRepository를 통해 spring data jpa가 자동으로 구현체를 만들고 spring bean에 등록해줌

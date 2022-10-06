@@ -7,7 +7,8 @@ import org.junit.jupiter.api.AfterEach;
 // import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import my.frist.hellospring.domain.Member;
+import my.first.hellospring.domain.Member;
+import my.first.hellospring.repository.MemoryMemberRepository;
 
 // 클래스 단위 테스트 시 싱행되는 메서드의 순서는 무작위임
 class MemoryMemberRepositoryTest {

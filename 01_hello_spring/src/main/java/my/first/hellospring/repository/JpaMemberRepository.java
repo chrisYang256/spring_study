@@ -1,4 +1,4 @@
-package my.frist.hellospring.repository;
+package my.first.hellospring.repository;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,7 +6,7 @@ import java.util.Optional;
 import javax.persistence.EntityManager;
 import javax.transaction.Transactional;
 
-import my.frist.hellospring.domain.Member;
+import my.first.hellospring.domain.Member;
 
 @Transactional // jpa는 데이터 변경 시 모두 transaction 안에서 실행 되어야 함.
 public class JpaMemberRepository implements MemberRepository {

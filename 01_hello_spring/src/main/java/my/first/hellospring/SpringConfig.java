@@ -1,4 +1,4 @@
-package my.frist.hellospring.service;
+package my.first.hellospring;
 
 import javax.persistence.EntityManager;
 
@@ -6,8 +6,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import my.frist.hellospring.repository.JpaMemberRepository;
-import my.frist.hellospring.repository.MemberRepository;
+import my.first.hellospring.aop.TimeTraceAop;
+import my.first.hellospring.repository.JpaMemberRepository;
+import my.first.hellospring.repository.MemberRepository;
+import my.first.hellospring.service.MemberService;
 
 @Configuration
 public class SpringConfig {
@@ -29,10 +31,15 @@ public class SpringConfig {
         this.memberRepository = memberRepository;
     }
 
-    // @Bean
+    // @Bean // The bean 'memberService', defined in class path resource... error
     public MemberService memberService() {
         return new MemberService(memberRepository);
     }
+
+    // @Bean
+    // public TimeTraceAop timeTraceAop() {
+    //     return new TimeTraceAop();
+    // }
 
     // @Bean
     // public MemberService memberService() {

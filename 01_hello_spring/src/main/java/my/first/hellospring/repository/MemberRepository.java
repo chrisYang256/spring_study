@@ -1,9 +1,9 @@
-package my.frist.hellospring.repository;
+package my.first.hellospring.repository;
 
 import java.util.List;
 import java.util.Optional;
 
-import my.frist.hellospring.domain.Member;
+import my.first.hellospring.domain.Member;
 
 public interface MemberRepository {
     Member save(Member member);
